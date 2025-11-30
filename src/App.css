@@ -1,0 +1,64 @@
+#root {
+  --light-green: #eaf4f4;
+  --mid-green: #cce3de;
+  --dark-green: #6b9080;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-green);
+  padding: 8rem 4rem;
+  border-radius: 1rem;
+  color: var(--dark-green);
+}
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.app__container__group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.app__container__field {
+  padding: .25rem;
+  border: 1px solid var(--dark-green);
+  border-radius: .25rem;
+  background-color: var(--mid-green);
+}
+
+.app__container__field:focus {
+  outline: none;
+}
+
+.app__container__dropdown {
+  padding: .25rem;
+  border: 1px solid var(--dark-green);
+  border-radius: .25rem;
+  background-color: var(--mid-green);
+}
+
+.app__container__dropdown:focus {
+  outline: none;
+}
+
+.app__container__button {
+  background-color: var(--mid-green);
+  border: 1px solid var(--dark-green);
+  border-radius: .25rem;
+  color: var(--dark-green);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.app__container__button:hover {
+  background-color: var(--dark-green);
+  color: var(--mid-green);
+}
